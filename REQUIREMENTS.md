@@ -5,28 +5,45 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 ## API Endpoints
 #### Products
-- index  
-- get (product by id) [token required]
+- index 
+[**GET** http://localhost:3000/api/products]  
 - add [token required]
+[**POST** http://localhost:3000/api/products/create] , product fields in the body
+- update [token required] 
+[**PUT** http://localhost:3000/api/products/] , product id in the body
 - delete [token required]
+[**DELETE** http://localhost:3000/api/products/] , product id in the body
 
 #### Users
-- index  
+- index 
+[**GET** http://localhost:3000/api/users]   
 - login
-- add [token required]
+[**POST** http://localhost:3000/api/users/login] , username & password in the body
+- add 
+[**POST** http://localhost:3000/api/users/login] , user fields in the body
+- update [token required]
+[**PUT** http://localhost:3000/api/users/] , user id in the body
 - delete [token required]
+[**DELETE** http://localhost:3000/api/users/] , user id in the body
 
 
 #### Orders
-- index  
-- get (order by id) [token required]
+- index
+[**GET** http://localhost:3000/api/orders]  
 - add [token required]
+[**POST** http://localhost:3000/api/orders/create] , order fields in the body
+- update 
+[**PUT** http://localhost:3000/api/orders/] , order id in the body
 - delete [token required]
+[**DELETE** http://localhost:3000/api/orders/] , order id in the body
 
 #### ProductOrders
 - get (orders by product id)
+[**GET** http://localhost:3000/api/productOrders] , product_id in the body  
 - add [token required]
+[**POST** http://localhost:3000/api/productOrders/create] , product order fields in the body
 - delete [token required]
+[**DELETE** http://localhost:3000/api/productOrders/] , productOrder id in the body
 -
 ## Data Shapes
 #### Product
