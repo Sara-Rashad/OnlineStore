@@ -1,0 +1,1 @@
+CREATE TABLE product_orders (id SERIAL PRIMARY KEY, product_id integer, order_id integer,quantity integer);

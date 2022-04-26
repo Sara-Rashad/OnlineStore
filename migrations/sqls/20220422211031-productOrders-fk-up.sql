@@ -1,0 +1,2 @@
+ALTER TABLE product_orders ADD CONSTRAINT productOrders_product_fk FOREIGN KEY (product_id ) REFERENCES products(id);
+ALTER TABLE product_orders ADD CONSTRAINT productOrders_oredr_fk FOREIGN KEY (order_id ) REFERENCES orders(id)
