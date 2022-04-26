@@ -5,38 +5,53 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 ## API Endpoints
 #### Products
-- Index 
-- Show
-- Create [token required]
-- [OPTIONAL] Top 5 most popular products 
-- [OPTIONAL] Products by category (args: product category)
+- index  
+- get (product by id) [token required]
+- add [token required]
+- delete [token required]
 
 #### Users
-- Index [token required]
-- Show [token required]
-- Create N[token required]
+- index  
+- login
+- add [token required]
+- delete [token required]
+
 
 #### Orders
-- Current Order by user (args: user id)[token required]
-- [OPTIONAL] Completed Orders by user (args: user id)[token required]
+- index  
+- get (order by id) [token required]
+- add [token required]
+- delete [token required]
 
+#### ProductOrders
+- get (orders by product id)
+- add [token required]
+- delete [token required]
+-
 ## Data Shapes
 #### Product
 -  id
 - name
 - price
-- [OPTIONAL] category
+- insert_date
 
 #### User
 - id
-- firstName
-- lastName
+- firstname
+- lastname
 - password
 
 #### Orders
 - id
-- id of each product in the order
-- quantity of each product in the order
+- status
 - user_id
-- status of order (active or complete)
+- order_date
+
+####ProductOrders
+- id
+- product_id
+- order_id
+- quantity
+
+
 
