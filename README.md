@@ -10,6 +10,7 @@
 
 ## Pre-requisits
 1- Creatin 2 postgres databases on your local machine, one for development and 1 for testing.
+
 2- Add .env file that contains all nessecary information for database connection:
  HOST=127.0.0.1
  DB_NAME=onlinestore
